@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "stacker_file": {
+      "path": "."
+    },
+    "minitest-handler": {
+      "locked_version": "1.1.4",
+      "git": "https://github.com/btm/minitest-handler-cookbook.git",
+      "ref": "f35ef256d7946e1f9b5a4a64304cc23209da4d32"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    }
+  }
+}
