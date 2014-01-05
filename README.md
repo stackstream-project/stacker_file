@@ -25,7 +25,7 @@ Tested on:
 
 ### Input
 
-* `[infrastructure_provider]` - remote file provider
+* `[:infrastructure_provider]` - remote file provider
 * `[:stacker_file][:base]` - the S3 bucket or beginning directory path
 * `[:stacker_file][:username]` - username to authenticate to the remote file provider
 * `[:stacker_file][:password]` - password for the user authenticating to the remote file provider
