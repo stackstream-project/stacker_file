@@ -39,6 +39,12 @@ Use the default recipe while specifying the necessary attributes to deploy the a
 
     include_recipe "stacker_file::default"
 
+How to call it from another recipe:
+
+    stacker_file "/var/tmp/archive_file" do
+      remote_source "myassetfiles/archive_file"
+    end
+
 # License
 
 [Stacker Project](http://stacker-project.github.io/) - Stack Management
