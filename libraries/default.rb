@@ -4,7 +4,7 @@ require 'fileutils'
 begin
   require 'fog'
   include Fog::Storage
-rescue
+rescue LoadError
 end
 
 def download(remote_path, path)

@@ -15,4 +15,4 @@ chef_gem "fog" do
   action :install
 end
 
-# require 'fog'
+require 'fog'
