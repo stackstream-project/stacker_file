@@ -42,7 +42,7 @@ Use the default recipe while specifying the necessary attributes to deploy the a
 How to call it from another recipe:
 
     stacker_file "/var/tmp/archive_file" do
-      remote_source "myassetfiles/archive_file"
+      remote_path "myassetfiles/archive_file"
     end
 
 # License
@@ -52,7 +52,7 @@ How to call it from another recipe:
 |                      |                                                     |
 |:---------------------|:----------------------------------------------------|
 | **Author:**          | Stacker-Project (<stacker-project@phoenection.com>) |
-| **Copyright:**       | Copyright (c) 2013 Phoenection                      |
+| **Copyright:**       | Copyright (c) 2014 Phoenection                      |
 | **License:**         | Apache License, Version 2.0                         |
 
 Licensed under the Apache License, Version 2.0 (the "License");
