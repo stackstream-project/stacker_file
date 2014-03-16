@@ -1,17 +1,12 @@
-e = execute "yum install -y -q libxml2 libxml2-devel libxslt libxslt-devel gcc gcc-c++" do
+e = execute "yum install -y -q libxml2 libxml2-devel libxslt libxslt-devel gcc" do
   action :nothing
-  not_if { `rpm -qa libxml2 libxml2-devel libxslt libxslt-devel gcc gcc-c++`.split("\n").length == 5 }
+  not_if { `rpm -qa libxml2 libxml2-devel libxslt libxslt-devel gcc`.split("\n").length == 5 }
 end
 
 e.run_action(:run)
 
 chef_gem "excon" do
   version "0.31.0"
-  action :install
-end
-
-chef_gem "unf" do
-  version "0.1.3"
   action :install
 end
 
