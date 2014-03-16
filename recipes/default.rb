@@ -1,6 +1,6 @@
-e = execute "yum install -y -q libxml2 libxml2-devel libxslt libxslt-devel gcc" do
+e = execute "yum install -y -q libxml2 libxml2-devel libxslt libxslt-devel gcc gcc46-c++" do
   action :nothing
-  not_if { `rpm -qa libxml2 libxml2-devel libxslt libxslt-devel gcc`.split("\n").length == 5 }
+  not_if { `rpm -qa libxml2 libxml2-devel libxslt libxslt-devel gcc gcc46-c++`.split("\n").length == 5 }
 end
 
 e.run_action(:run)
