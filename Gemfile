@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby "2.0.0"
 
-gem 'chef'
+gem 'chef', '>= 12.0.0'
 gem 'berkshelf'
-gem 'thor-foodcritic'
+gem 'thor-foodcritic', '>= 2.0.0'
 gem 'rspec'
-gem 'chefspec'
-gem 'fauxhai'
+gem 'chefspec', '>= 4.1.0'
+gem 'fauxhai', '>= 2.0.1'
 gem 'tailor'
